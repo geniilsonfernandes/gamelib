@@ -1,0 +1,39 @@
+:root {
+    --dark--900: #1e2127;
+    --dark--800: #25262e;
+    --dark--700: #35363e;
+    --dark--600: #5e6167;
+    --white--900: #f5f5f5;
+    --primary: #f2c241;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+/* font */
+body {
+    background-color: var(--dark--800);
+    color: var(--white--900);
+}
+
+body,
+textarea,
+input,
+button,
+p {
+    font-family: "Poppins", sans-serif;
+}
+button {
+    cursor: pointer;
+}

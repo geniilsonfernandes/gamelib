@@ -14,8 +14,6 @@
 }
 .center {
     flex: 1 0 0;
-    height: 100%;
-    border: 1px solid blue;
 }
 .left {
     flex: 1 0 0;

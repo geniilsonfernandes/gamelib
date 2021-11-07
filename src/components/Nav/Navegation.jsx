@@ -3,6 +3,7 @@ import styles from "./Navegation.module.css";
 import Container from "../Layout/Container";
 import { Logo } from "../../Assets/Icons";
 import { NavLink } from "react-router-dom";
+import Search from "../Search/Search";
 function Navegation() {
   return (
     <nav className={styles.nav}>
@@ -18,7 +19,9 @@ function Navegation() {
             </NavLink>
           </div>
         </div>
-        <div className={styles.center}></div>
+        <div className={styles.center}>
+          <Search />
+        </div>
         <div className={styles.left}></div>
       </Container>
     </nav>

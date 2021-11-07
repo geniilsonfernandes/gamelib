@@ -1,0 +1,51 @@
+.user {
+  display: flex;
+  gap: 12px;
+
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all ease-in-out 300ms;
+  &:hover {
+    background-color: var(--dark--800);
+  }
+}
+.user__photo {
+  height: 40px;
+  width: 40px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.user__data {
+  position: relative;
+  padding: 0 40px 0 0;
+  @media screen and (max-width: 768px) {
+    padding: 0 20px 0 0;
+}
+  h1 {
+    font-size: 16px;
+    font-weight: bold;
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
+  }
+  .status {
+    color: var(--primary);
+    font-family: "Cairo", sans-serif;
+    font-size: 12px;
+    display: block;
+    margin-top: -5px;
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
+  }
+  .arrow {
+    height: 100%;
+    right: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+
+    position: absolute;
+  }
+}

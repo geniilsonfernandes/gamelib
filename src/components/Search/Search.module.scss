@@ -1,6 +1,8 @@
 .search {
   position: relative;
-
+  min-width: 100px;
+  width: 100%;
+  max-width: 400px;
   input {
     border: none;
     outline: none;
@@ -36,6 +38,9 @@
     transition: all ease-in-out 300ms;
     &:hover {
       background-color: var(--primary--hover);
+    }
+    &:disabled {
+      background-color: var(--dark--700);
     }
   }
 }

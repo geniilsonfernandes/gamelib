@@ -1,0 +1,30 @@
+.logo {
+  display: flex;
+  align-items: center;
+  svg path {
+    transition: all ease-in-out 300ms;
+  }
+  &:hover {
+    svg path {
+      fill: var(--primary) !important;
+    }
+  }
+}
+
+.links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.link {
+  display: inline-flex;
+  padding: 5px 4px;
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--dark--600);
+  transition: all ease-in-out 300ms;
+}
+.link:hover {
+  color: var(--primary);
+}

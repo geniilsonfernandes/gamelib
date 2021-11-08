@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styles from "./Search.module.scss";
-import { LoadingIcon, SearchIcon } from "../../Assets/Icons";
+import { LoadingIcon, SearchIcon } from "../../assets/Icons";
 function Search() {
   const [loading, setLoading] = useState(false);
   const [value, setValue] = useState("");
@@ -10,9 +10,14 @@ function Search() {
     event.preventDefault();
     setLoading((e) => !e);
   }
+
   function changeValue(value) {
     setValue(value);
     value !== "" ? setActiveSearchButton(true) : setActiveSearchButton(false);
+
+    setTimeout(() => {
+      setLoading(true);
+    }, 1000);
   }
 
   return (
@@ -30,11 +35,7 @@ function Search() {
           </span>
         )}
 
-        <button
-          type="submit"
-          className={styles.submit}
-          disabled={loading}
-        >
+        <button type="submit" className={styles.submit} disabled={loading}>
           <SearchIcon />
         </button>
       </form>

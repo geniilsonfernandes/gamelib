@@ -1,7 +1,12 @@
 import React from "react";
+import Header from "./Header/Header";
 
 function Home() {
-  return <>home</>;
+  return (
+    <>
+      <Header />
+    </>
+  );
 }
 
 export default Home;

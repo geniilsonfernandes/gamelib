@@ -1,0 +1,18 @@
+.votes {
+  background-color: var(--white--900);
+  width: 32px;
+  height: 32px;
+  border-radius: 4px;
+  color: var(--dark--900);
+  font-weight: 700;
+  font-size: 16px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  span {
+    transform: translateY(2px) translateX(1px);
+    font-size: 12px;
+    opacity: 0.5;
+  }
+}

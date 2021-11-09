@@ -1,6 +1,7 @@
 import React from "react";
 import Votes from "../Votes/Votes";
 import styles from "./GamePhoto.module.scss";
+import Star from "../Star/Star";
 
 function GamePhoto({ children }) {
   return (
@@ -11,13 +12,9 @@ function GamePhoto({ children }) {
       ></div>
       <div className={styles.menu__top}>
         <Votes />
+        <Star />
       </div>
       {children}
-      <div className={styles.menu__bottom}>
-        <button className={styles.state__button}> Mee</button>
-        <button className={styles.state__button}> Playing</button>
-        <button className={styles.state__button}> Played</button>
-      </div>
     </div>
   );
 }

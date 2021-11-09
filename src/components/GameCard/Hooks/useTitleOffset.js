@@ -16,8 +16,10 @@ function useTitleOffset(valueNode) {
 
     if (titleWith > offSetTitle && showTitle) {
       titleEl.style.transform = `translate3d(-${offSetTitle}px, 0, 0)`;
+      titleEl.style.transition = "transform 50ms linear";
     } else {
       titleEl.style.transform = `translate3d(-${offSetTitle}px, 0, 0)`;
+      titleEl.style.transition = "none";
       setOffSet(0);
     }
   }, [offSetTitle, valueNode, showTitle]);

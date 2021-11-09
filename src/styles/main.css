@@ -26,6 +26,7 @@ button {
 body {
     background-color: var(--dark--800);
     color: var(--white--900);
+    overflow-x: hidden;
 }
 
 body,
@@ -64,4 +65,9 @@ a.active::after {
     to {
         transform: translateX(-50%) translateY(0px);
     }
+}
+
+/* Swiper extra config */
+.swiper-container {
+    overflow: initial !important;
 }

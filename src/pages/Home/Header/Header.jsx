@@ -6,15 +6,13 @@ import joystick from "../../../assets/images/Joystick.png";
 
 function Header() {
   const backgroundEl = useRef(null);
+
   useEffect(() => {
     const paralaxScroll = (e) => {
-      console.log(window.scrollY);
       const nodeEl = backgroundEl.current;
       nodeEl.style.backgroundPosition = `center -${window.scrollY / 3}px`;
     };
-
     window.addEventListener("scroll", paralaxScroll);
-
     return () => {
       window.removeEventListener("scroll", paralaxScroll);
     };

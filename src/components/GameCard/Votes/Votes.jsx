@@ -1,10 +1,10 @@
 import React from "react";
 import styles from "./Votes.module.scss";
 
-function Votes() {
+function Votes({ votes }) {
   return (
     <div className={styles.votes}>
-      1 <span>,7</span>
+      {votes} <span>,7</span>
     </div>
   );
 }

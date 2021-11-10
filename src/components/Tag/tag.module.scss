@@ -1,0 +1,13 @@
+.tag {
+  padding: 0 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--white--900);
+  color: var(--dark--900);
+  font-size: 16px;
+  font-weight: 600;
+  height: 30px;
+  border-radius: 4px;
+  text-transform: uppercase;
+}

@@ -1,11 +1,12 @@
-.banner {
+.s__banner {
   background: var(--dark--900);
   height: 100vh;
   max-height: 287px;
   width: 100%;
   position: relative;
   display: flex;
-  margin: 20px 0;
+  margin: var(--glabal--margin);
+
   .left {
     flex: 0 0 40%;
   }
@@ -29,20 +30,10 @@
     }
   }
 }
-.highlight {
+.tag {
   position: absolute;
-  padding: 0 16px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: var(--gradient);
-  color: #fff;
-  font-size: 16px;
-  height: 25px;
   top: -14px;
-  border-radius: 4px;
   left: 30px;
-  text-transform: uppercase;
 }
 .left {
   .left__content {

@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import GameCard from "../../../components/GameCard/GameCard";
-import Container from "../../../components/Layout/Container";
+
 import styles from "./GamesSlider.module.scss";
 // Swiper
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -41,8 +41,8 @@ function GamesSlider() {
   }, [nextEl, prev]);
 
   return (
-    <Container>
-      <div className={styles.slider}>
+    <>
+      <div className={styles.s__slider}>
         <div className={styles.head}>
           <div className={styles.left}>
             <h2 className={styles.title}>
@@ -86,7 +86,7 @@ function GamesSlider() {
           ))}
         </Swiper>
       </div>
-    </Container>
+    </>
   );
 }
 

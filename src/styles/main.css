@@ -4,9 +4,14 @@
     --dark--700: #35363e;
     --dark--600: #5e6167;
     --white--900: #f5f5f5;
+
+    /* color on site */
     --primary: #9941f2;
     --primary--hover: #7b30c5;
+    /* color on site */
+    
     --gradient: linear-gradient(91.99deg, #8a2dff -8.15%, #00ffe0 124.64%);
+    --glabal--margin: 38px 0;
 }
 
 * {

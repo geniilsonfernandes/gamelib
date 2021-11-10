@@ -66,8 +66,3 @@ a.active::after {
         transform: translateX(-50%) translateY(0px);
     }
 }
-
-/* Swiper extra config */
-.swiper-container {
-    overflow: initial !important;
-}

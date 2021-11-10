@@ -4,7 +4,7 @@
   gap: 16px;
 }
 .game {
-  padding-top: 18px;
+  padding-top: 14px;
   overflow: hidden;
   color: var(--white--900);
   padding-right: 16px;
@@ -13,16 +13,23 @@
     font-size: 14px;
     font-weight: 600;
     color: inherit;
-    display: inline-flex;
+    display: flex;
     white-space: nowrap;
     will-change: transform;
+    @media screen and (max-width: 768px) {
+      font-size: 12px;
+    }
   }
   span {
     opacity: 0.5;
     font-size: 14px;
     font-weight: 300;
+    @media screen and (max-width: 768px) {
+      font-size: 12px;
+    }
   }
 }
+
 .options {
   flex: 1;
   display: flex;

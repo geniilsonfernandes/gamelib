@@ -1,23 +1,15 @@
-import React, { useEffect, useRef } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
-import useTitleOffset from "../Hooks/useTitleOffset";
 import styles from "./GameDescription.module.scss";
 
-function GameDescription({ onMouseOver }) {
-  const gameTitleEl = useRef(null);
-  const { titleMove } = useTitleOffset(gameTitleEl);
-
-  useEffect(() => {
-    titleMove(onMouseOver);
-  }, [onMouseOver, titleMove]);
+function GameDescription({ publisher, title }) {
+  const game = title.substring(0, 23) + "...";
 
   return (
     <div className={styles.description}>
       <div className={styles.game}>
-        <Link to="/" ref={gameTitleEl}>
-          The Witcher 3: Wild Hunt
-        </Link>
-        <span>CD Project Red</span>
+        <Link to="/">{game}</Link>
+        <span>{publisher}</span>
       </div>
     </div>
   );

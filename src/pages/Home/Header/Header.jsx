@@ -29,7 +29,6 @@ function Header() {
             <p>Create a list, share and search news games</p>
             <div className={styles.group__cta}>
               <ButtonSmall>Create my lib</ButtonSmall>
-              <ButtonSmall highlight={false}>Search games</ButtonSmall>
             </div>
           </div>
         </div>

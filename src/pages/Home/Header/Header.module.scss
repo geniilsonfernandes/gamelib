@@ -20,8 +20,10 @@
       #1e21279d 50%,
       #25262e 97.41%
     );
-
     z-index: 1;
+  }
+  @media screen and (max-width: 768px) {
+    height: 60vh;
   }
 }
 
@@ -34,6 +36,9 @@
     flex: 0 0 50%;
     display: flex;
     align-items: center;
+    @media screen and (max-width: 768px) {
+      flex: 0 0 80%;
+    }
   }
 }
 
@@ -49,6 +54,11 @@
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
+    @media screen and (max-width: 768px) {
+      font-size: 24px;
+      line-height: 35px;
+      padding-bottom: 10px;
+    }
   }
   p {
     font-weight: normal;
@@ -56,6 +66,10 @@
     line-height: 26px;
     color: var(--white--900);
     padding-bottom: 40px;
+
+    @media screen and (max-width: 768px) {
+      font-size: 14px;
+    }
   }
 }
 
@@ -69,4 +83,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 }

@@ -6,6 +6,7 @@
     --white--900: #f5f5f5;
     --primary: #9941f2;
     --primary--hover: #7b30c5;
+    --gradient: linear-gradient(91.99deg, #8a2dff -8.15%, #00ffe0 124.64%);
 }
 
 * {

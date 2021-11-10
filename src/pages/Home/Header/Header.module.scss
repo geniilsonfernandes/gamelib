@@ -7,7 +7,7 @@
   // background: var(--dark--800);
   position: relative;
   height: 650px;
-
+  max-height: 650px;
   &::after {
     content: "";
     position: absolute;
@@ -25,7 +25,6 @@
   }
   @media screen and (max-width: 768px) {
     height: 60vh;
-    max-height: 350px;
   }
 }
 
@@ -52,7 +51,7 @@
     color: var(--white--900);
     padding-bottom: 20px;
     span {
-      background: linear-gradient(125deg, #e315a6 12.48%, #16acf3 86.02%);
+      background: var(--gradient);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }

@@ -13,7 +13,14 @@
   .right {
     flex: 0 0 60%;
   }
-
+  @media screen and (max-width: 1024px) {
+    .left {
+      flex: 0 0 50%;
+    }
+    .right {
+      flex: 0 0 50%;
+    }
+  }
   @media screen and (max-width: 768px) {
     flex-flow: wrap;
     height: auto;

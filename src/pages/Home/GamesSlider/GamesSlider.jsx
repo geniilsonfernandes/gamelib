@@ -29,7 +29,7 @@ const slideResposiveConfig = {
   },
 };
 
-function GamesSlider() {
+function GamesSlider({ highlight, title }) {
   const [next, setNext] = useState(null);
   const [prev, setPrev] = useState(null);
   const prevEl = useRef(null);
@@ -44,28 +44,17 @@ function GamesSlider() {
     <>
       <div className={styles.s__slider}>
         <div className={styles.head}>
-          <div className={styles.left}>
-            <h2 className={styles.title}>
-              <span>Now</span> and Trending
-            </h2>
-          </div>
-          <div className={styles.right}>
-            <div className={styles.control}>
-              <button
-                className={styles.control__button}
-                name="prev"
-                ref={prevEl}
-              >
-                <ArrowIcon />
-              </button>
-              <button
-                className={styles.control__button}
-                name="next"
-                ref={nextEl}
-              >
-                <ArrowIcon />
-              </button>
-            </div>
+          <h2 className={styles.title}>
+            {highlight && <span>Now </span>}
+            {title}
+          </h2>
+          <div className={styles.control}>
+            <button className={styles.control__button} name="prev" ref={prevEl}>
+              <ArrowIcon />
+            </button>
+            <button className={styles.control__button} name="next" ref={nextEl}>
+              <ArrowIcon />
+            </button>
           </div>
         </div>
         <Swiper
@@ -79,9 +68,9 @@ function GamesSlider() {
             nextEl: next,
           }}
         >
-          {games.map((id) => (
-            <SwiperSlide>
-              <GameCard key={id} />
+          {games.map((id, i) => (
+            <SwiperSlide key={i}>
+              <GameCard />
             </SwiperSlide>
           ))}
         </Swiper>

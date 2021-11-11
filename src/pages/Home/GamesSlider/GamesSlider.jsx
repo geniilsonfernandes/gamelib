@@ -14,7 +14,8 @@ const slideResposiveConfig = {
   // when window width is >= 640px
   375: {
     spaceBetween: 10,
-    slidesPerView: 2,
+    slidesPerView: 1,
+    width: 234,
   },
   640: {
     spaceBetween: 16,
@@ -58,8 +59,9 @@ function GamesSlider({ highlight, title }) {
           </div>
         </div>
         <Swiper
-          breakpoints={slideResposiveConfig}
-          slidesPerView={2}
+          // breakpoints={slideResposiveConfig}
+          slidesPerView={1}
+          width={230}
           spaceBetween={16}
           onSwiper={(swiper) => console.log(swiper)}
           wrapperTag="div"

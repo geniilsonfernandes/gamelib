@@ -9,7 +9,7 @@
     --primary: #9941f2;
     --primary--hover: #ca55e7;
     /* color on site */
-    
+
     --gradient: linear-gradient(91.99deg, #8a2dff -8.15%, #00ffe0 124.64%);
     --glabal--margin: 48px 0;
 }
@@ -71,4 +71,7 @@ a.active::after {
     to {
         transform: translateX(-50%) translateY(0px);
     }
+}
+.swiper-container {
+    overflow: initial;
 }

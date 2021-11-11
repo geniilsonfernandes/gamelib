@@ -1,0 +1,21 @@
+.paralax {
+  width: 100%;
+  min-height: 100px;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  img {
+    position: absolute;
+    left: 0;
+    top: -50%;
+
+    width: 100%;
+    object-fit: cover;
+    object-position: center center;
+    z-index: -1;
+  }
+  h1 {
+    position: absolute;
+    z-index: 1000;
+  }
+}

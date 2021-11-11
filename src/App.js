@@ -5,7 +5,7 @@ import "./styles/main.css";
 function App() {
   return (
     <>
-      <Navegation />
+      {/* <Navegation /> */}
       <Router />
       <Footer />
     </>

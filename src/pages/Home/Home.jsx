@@ -11,7 +11,6 @@ function Home() {
       <MainContainer>
         <GamesSlider title="Trending games" />
         <Notices />
-        <GamesSlider title="Adventures" />
         <GamesSlider title="RPG" />
       </MainContainer>
     </>

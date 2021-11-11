@@ -1,37 +1,37 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useCallback, useEffect, useRef } from "react";
 import styles from "./Paralax.module.scss";
 
-function Paralax({ img, height, width, force, children }) {
-  const containerEl = useRef(null);
+function Paralax({ background, force, children, alt }) {
+  const wrapperEl = useRef(null);
   const imageEl = useRef(null);
 
+  const paralaxScroll = useCallback((e) => {
+    const { offsetTop, clientHeight } = wrapperEl.current;
+    const offsetScreen = window.scrollY + window.innerHeight;
+    const image = imageEl.current;
+    const count = (offsetTop - offsetScreen) / 10;
+
+    image.style.top = `${Math.abs(count) - clientHeight}px`;
+    image.style.height = `${clientHeight * 2}px`;
+
+    if (offsetScreen > offsetTop) {
+      image.style.transition = "transform 50ms linear";
+    } else {
+      return;
+    }
+  }, []);
+
   useEffect(() => {
-    const paralaxScroll = (e) => {
-      const { offsetTop } = containerEl.current;
-      const offsetScreen = window.scrollY + window.innerHeight;
-      const image = imageEl.current;
-      const count = +(offsetTop - offsetScreen) / force;
-      if (offsetScreen > offsetTop) {
-        console.log(count);
-        image.style.transform = `translate3d(0, ${Math.abs(count)}px, 0)`;
-        image.style.transition = "transform 50ms linear";
-      } else {
-      }
-    };
     window.addEventListener("scroll", paralaxScroll);
     return () => {
       window.removeEventListener("scroll", paralaxScroll);
     };
-  }, [force]);
+  }, [paralaxScroll]);
 
   return (
-    <div
-      className={styles.paralax}
-      ref={containerEl}
-      style={{ width: `${width}`, height: `${height}` }}
-    >
+    <div className={styles.paralax} ref={wrapperEl}>
       {children}
-      <img src={img} alt="" ref={imageEl} />
+      <img src={background} alt={alt} ref={imageEl} />
     </div>
   );
 }

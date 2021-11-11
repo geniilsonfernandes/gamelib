@@ -1,6 +1,10 @@
-.grid {
-  display: flex;
-  div {
-    flex: 0 0 100%;
-  }
+.grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  height: 300px;
+  
 }
+
+
+

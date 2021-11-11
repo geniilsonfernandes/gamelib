@@ -5,11 +5,11 @@ import Head from "../Head/Head";
 
 function Notices() {
   return (
-    <>
+    <section style={{ position: "relative" }}>
       <Head title="Last notices" />
       <BigBanner />
       <BlogDisplay />
-    </>
+    </section>
   );
 }
 

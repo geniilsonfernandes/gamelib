@@ -1,3 +1,42 @@
-.s__footer{
-    
+.s__footer {
+}
+
+.s__address {
+  background-color: var(--dark--700);
+}
+.address {
+  height: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.author {
+  font-size: 15px;
+  color: var(--dark--600);
+  font-weight: 500;
+  transition: color ease-in-out 200ms;
+  a {
+    color: var(--primary);
+  }
+}
+.contact {
+  ul {
+    list-style: none;
+    display: flex;
+    gap: 24px;
+    li {
+      a {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 14px;
+        color: var(--dark--600);
+        transition: color ease-in-out 200ms;
+
+        &:hover {
+          color: var(--primary);
+        }
+      }
+    }
+  }
 }

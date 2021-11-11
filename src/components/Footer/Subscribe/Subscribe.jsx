@@ -19,6 +19,7 @@ function Subscribe() {
           placeholder="Email address"
           data-input-change={showIcon}
           onChange={({ target }) => setValue(target.value)}
+          required
         />
         <button type="submit" className={styles.submit}>
           Subscribe now

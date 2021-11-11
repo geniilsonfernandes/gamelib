@@ -13,7 +13,7 @@ function Navegation() {
 
   return (
     <nav className={styles.nav} data-home={pathname === "/"}>
-      <Container classCss={styles.nav__item}>
+      <Container className={styles.nav__item}>
         <div className={styles.right}>
           <NavLinks />
         </div>

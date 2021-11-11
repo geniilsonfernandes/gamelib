@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./BigBanner.module.scss";
 import image from "../../../assets/images/game__mock_02.png";
 import Tag from "./../../Tag/Tag";
-import Paralax from "./../../Paralax/Paralax";
+import { Link } from "react-router-dom";
 
 function BigBanner() {
   return (
@@ -12,7 +12,7 @@ function BigBanner() {
       </span>
       <div className={styles.left}>
         <div className={styles.left__content}>
-          <h2>Need for Speed™ Heat</h2>
+          <Link to="/">Need for Speed™ Heat</Link>
           <span>Electronic Arts Inc</span>
           <p>
             Trabalhe de dia e arrisque tudo à noite no Need for Speed™ Heat,

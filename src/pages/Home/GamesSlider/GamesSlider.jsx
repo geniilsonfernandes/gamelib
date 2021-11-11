@@ -61,7 +61,6 @@ function GamesSlider({ title }) {
           slidesPerView={1}
           width={230}
           spaceBetween={16}
-          onSwiper={(swiper) => console.log(swiper)}
           wrapperTag="div"
           navigation={{
             prevEl: prev,

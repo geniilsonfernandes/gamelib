@@ -20,7 +20,7 @@ function Header() {
 
   return (
     <header className={styles.header} ref={backgroundEl}>
-      <Container classCss={styles.header__content}>
+      <Container className={styles.header__content}>
         <div className={styles.left}>
           <div className={styles.left__content}>
             <h1>

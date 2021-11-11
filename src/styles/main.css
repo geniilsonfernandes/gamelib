@@ -1,17 +1,25 @@
 :root {
+    /* palete */
     --dark--900: #1e2127;
     --dark--800: #25262e;
     --dark--700: #35363e;
     --dark--600: #5e6167;
     --white--900: #f5f5f5;
-
-    /* color on site */
+    /* palete */
+    /* Brand colors */
     --primary: #9941f2;
     --primary--hover: #ca55e7;
-    /* color on site */
-
-    --gradient: linear-gradient(91.99deg, #8a2dff -8.15%, #00ffe0 124.64%);
-    --glabal--margin: 48px 0;
+    /* Brand colors */
+    /* control */
+    --components-margin: 30px;
+    /* control */
+    /* especial colors  */
+    --gradient: linear-gradient(91.99deg, var(--primary) -8.15%, #00ffe0 124.64%);
+    /* especial colors  */
+    /* layout vars */
+    --global--radios: 0;
+    --glabal--margin: var(--components-margin) 0;
+    /* layout vars */
 }
 
 * {
@@ -32,6 +40,9 @@ button {
 body {
     background-color: var(--dark--800);
     color: var(--white--900);
+}
+html,
+body {
     overflow-x: hidden;
 }
 

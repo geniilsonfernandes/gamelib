@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./BigBanner.module.scss";
 import image from "../../../assets/images/game__mock_02.png";
 import Tag from "./../../Tag/Tag";
+import Paralax from "./../../Paralax/Paralax";
 
 function BigBanner() {
   return (

@@ -30,7 +30,7 @@ const slideResposiveConfig = {
   },
 };
 
-function GamesSlider({ highlight, title }) {
+function GamesSlider({ title }) {
   const [next, setNext] = useState(null);
   const [prev, setPrev] = useState(null);
   const prevEl = useRef(null);
@@ -45,10 +45,8 @@ function GamesSlider({ highlight, title }) {
     <>
       <div className={styles.s__slider}>
         <div className={styles.head}>
-          <h2 className={styles.title}>
-            {highlight && <span>Now </span>}
-            {title}
-          </h2>
+          <h2 className={styles.title}>{title}</h2>
+          <hr />
           <div className={styles.control}>
             <button className={styles.control__button} name="prev" ref={prevEl}>
               <ArrowIcon />

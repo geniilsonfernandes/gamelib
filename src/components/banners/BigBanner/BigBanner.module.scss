@@ -5,7 +5,7 @@
   width: 100%;
   position: relative;
   display: flex;
-  margin: var(--glabal--margin);
+  margin: calc(var(--components-margin) + 10px) 0 var(--components-margin) 0;
 
   .left {
     flex: 0 0 40%;

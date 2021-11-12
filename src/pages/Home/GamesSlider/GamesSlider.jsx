@@ -6,7 +6,7 @@ import styles from "./GamesSlider.module.scss";
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Navigation, Pagination } from "swiper";
 import "swiper/swiper-bundle.css";
-import { ArrowIcon } from "../../../assets/Icons/Icon";
+
 SwiperCore.use([Navigation, Pagination]);
 
 const games = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
@@ -30,10 +30,10 @@ function GamesSlider({ title }) {
           <hr />
           <div className={styles.control}>
             <button className={styles.control__button} name="prev" ref={prevEl}>
-              <ArrowIcon />
+              t
             </button>
             <button className={styles.control__button} name="next" ref={nextEl}>
-              <ArrowIcon />
+              t
             </button>
           </div>
         </div>

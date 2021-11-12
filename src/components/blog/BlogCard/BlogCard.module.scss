@@ -41,11 +41,15 @@
 .card__description {
   padding: 24px 0 0 0;
 
-  h2 {
+  a {
     color: var(--white--900);
     font-size: 18px;
     line-height: 24px;
     font-weight: 600;
+    transition: all ease-in-out 300ms;
+    &:hover {
+      color: var(--primary);
+    }
   }
 }
 .info {

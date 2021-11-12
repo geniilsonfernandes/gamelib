@@ -1,10 +1,13 @@
 import React, { useState } from "react";
 import styles from "./Search.module.scss";
 import { LoadingIcon, SearchIcon } from "../../assets/Icons";
+import ModalSuggestion from "./ModalSuggestion/ModalSuggestion";
+import { AnimatePresence } from 'framer-motion';
 function Search() {
   const [loading, setLoading] = useState(false);
   const [value, setValue] = useState("");
   const [activeSearchButton, setActiveSearchButton] = useState(false);
+  const [showModal, setShowModal] = useState(false);
 
   function handleSubmit(event) {
     event.preventDefault();
@@ -21,13 +24,15 @@ function Search() {
   }
 
   return (
-    <>
+    <div className={styles.wrapper}>
       <form action="" className={styles.search} onSubmit={handleSubmit}>
         <input
           type="text"
           placeholder="Search games"
           value={value}
           onChange={(e) => changeValue(e.target.value)}
+          onFocus={() => setShowModal(true)}
+          onBlur={() => setShowModal(false)}
         />
         {loading && (
           <span className={styles.loading}>
@@ -39,7 +44,10 @@ function Search() {
           <SearchIcon />
         </button>
       </form>
-    </>
+      <AnimatePresence initial={false}>
+      {showModal && <ModalSuggestion />}
+      </AnimatePresence>
+    </div>
   );
 }
 

@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { CheckIcon, checkIcon, UserIcon } from "../../../assets/Icons";
 import styles from "./Subscribe.module.scss";
+import Loading from "./../../helpers/Loading/Loading";
 
 function Subscribe() {
   const [showIcon, setShowIcon] = useState(false);
@@ -15,9 +16,12 @@ function Subscribe() {
 
   function handleSubmit(e) {
     e.preventDefault();
+    setLoading(true);
 
-    setLoading(!submited);
-    setSubmited(!submited);
+    setTimeout(() => {
+      setLoading(false);
+      setSubmited(true);
+    }, 2000);
   }
 
   return (
@@ -48,7 +52,7 @@ function Subscribe() {
             />
 
             <button type="submit" className={styles.submit}>
-              Subscribe now
+              {loading ? <Loading  /> : "Subscribe now"}
             </button>
           </motion.form>
         ) : (
@@ -57,7 +61,6 @@ function Subscribe() {
             animate={{ opacity: 1, scale: 1 }}
             exit={{ opacity: 0, scale: 0.8 }}
             className={styles.submited}
-            onClick={() => setSubmited(!submited)}
           >
             All Right <CheckIcon />
           </motion.div>

@@ -8,3 +8,4 @@ export { ReactComponent as UserIcon } from "./ic-actions-user.svg";
 export { ReactComponent as MailIcon } from "./Mail.svg";
 export { ReactComponent as PhoneIcon } from "./Phone.svg";
 export { ReactComponent as CheckIcon } from "./check.svg";
+export { ReactComponent as GamePadIcon } from "./game__pad.svg";

@@ -1,10 +1,10 @@
 .nav {
-  height: 100px;
+  padding-top: 38px;
   background-color: var(--dark--700);
 }
 .nav__item {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
   height: 100%;
 }

@@ -1,0 +1,32 @@
+.genre__card {
+  height: 48px;
+  border-radius: var(--global--radios);
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  h2 {
+    padding-left: 16px;
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--white--900);
+    z-index: 2;
+  }
+  span {
+    z-index: 2;
+    display: block;
+    width: 5px;
+    height: 100%;
+    background: rgb(51, 255, 0);
+    border-radius: 0 var(--global--radios) var(--global--radios) 0;
+  }
+  img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    object-fit: cover;
+  }
+}

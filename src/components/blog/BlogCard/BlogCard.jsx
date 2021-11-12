@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./BlogCard.module.scss";
 import Tag from "./../../Tag/Tag";
 import image from "../../../assets/images/game__mock_03.png";
+import { Link } from "react-router-dom";
 function BlogCard() {
   return (
     <div className={styles.card}>
@@ -12,7 +13,7 @@ function BlogCard() {
         </div>
       </div>
       <div className={styles.card__description}>
-        <h2>Marvel's Guardians of the Galaxy - Review</h2>
+        <Link to="/">Marvel's Guardians of the Galaxy - Review</Link>
         <div className={styles.info}>
           <span className={styles.info__inline}>
             By <span> Thomas Paul</span>

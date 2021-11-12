@@ -19,6 +19,10 @@
     @media screen and (max-width: 768px) {
       font-size: 12px;
     }
+    transition: all ease-in-out 300ms;
+    &:hover {
+      color: var(--primary);
+    }
   }
   span {
     opacity: 0.5;

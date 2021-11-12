@@ -53,7 +53,7 @@
     @media screen and (max-width: 768px) {
       padding: 16px;
     }
-    a {
+    .title {
       font-size: 24px;
       color: inherit;
       font-weight: 600;
@@ -66,7 +66,7 @@
         color: var(--primary);
       }
     }
-    span {
+    .publisher {
       padding-top: 4px;
       color: var(--dark--600);
       font-size: 16px;
@@ -100,20 +100,49 @@
 }
 .button__group {
   margin-top: 16px;
-}
-.add__button {
-  background-color: transparent;
 
-  border: 1px solid var(--white--900);
-  outline: none;
-  border-radius: 4px;
-  padding: 0 16px;
-  height: 40px;
+  .action__button {
+    display: inline-flex;
+    align-items: center;
+    gap: 16px;
 
-  font-size: 16px;
-  color: var(--white--900);
-  transition: background-color ease-in 300ms;
-  &:hover {
-    background-color: var(--dark--700);
+    outline: none;
+
+    padding: 0 16px;
+    height: 48px;
+    position: relative;
+
+    border-style: solid;
+    border-width: 1px;
+    border-image: linear-gradient(
+        45deg,
+        var(--primary) -10%,
+        rgba(47, 234, 200, 0) 60%
+      )
+      1;
+    border-radius: 4px;
+
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--white--900);
+    white-space: nowrap;
+    transition: all ease-in-out 300ms;
+    svg path {
+      fill: var(--white--900);
+      transition: all ease-in-out 300ms;
+    }
+    &:hover {
+      gap: 24px;
+      color: var(--primary);
+      border-image: linear-gradient(
+          45deg,
+          var(--primary) 20%,
+          rgba(47, 234, 200, 0) 80%
+        )
+        1;
+      svg path {
+        fill: var(--primary);
+      }
+    }
   }
 }

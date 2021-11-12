@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { CheckIcon, UserIcon } from "../../../assets/Icons/Icon";
+
 import styles from "./Subscribe.module.scss";
 import Loading from "./../../helpers/Loading/Loading";
 
@@ -37,9 +37,7 @@ function Subscribe() {
             onSubmit={handleSubmit}
             data-input-change={showIcon}
           >
-            <span className={styles.icon} data-input-change={showIcon}>
-              <UserIcon />
-            </span>
+            <span className={styles.icon} data-input-change={showIcon}></span>
             <input
               type="email"
               className={styles.input}
@@ -62,7 +60,7 @@ function Subscribe() {
             exit={{ opacity: 0, scale: 0.8 }}
             className={styles.submited}
           >
-            All Right <CheckIcon />
+            All Right
           </motion.div>
         )}
       </AnimatePresence>

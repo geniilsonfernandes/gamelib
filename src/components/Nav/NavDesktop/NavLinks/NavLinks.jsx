@@ -1,14 +1,12 @@
 import React from "react";
 import { Link, NavLink } from "react-router-dom";
-import { Logo } from "../../../../assets/Icons";
+
 import styles from "./NavLinks.module.scss";
 
 function NavLinks() {
   return (
     <>
-      <Link to="/" className={styles.logo}>
-        <Logo />
-      </Link>
+      <Link to="/" className={styles.logo}></Link>
       <div className={styles.links}>
         <NavLink to="/" className={styles.link}>
           Discover

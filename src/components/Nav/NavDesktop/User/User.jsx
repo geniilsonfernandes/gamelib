@@ -1,5 +1,5 @@
 import React from "react";
-import { ArrowDonwIcon } from "../../../../assets/Icons";
+
 import styles from "./user.module.scss";
 
 function User() {
@@ -15,7 +15,7 @@ function User() {
         <span className={styles.status}>Casual gamer</span>
 
         <span className={styles.arrow}>
-          <ArrowDonwIcon />
+         
         </span>
       </span>
     </div>

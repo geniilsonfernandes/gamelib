@@ -1,6 +1,6 @@
 import React from "react";
 import Container from "../../components/Layout/Container";
-import Notices from "../../components/Notices/Notices";
+import Notices from "../../components/blog/Notices/Notices";
 import GamesSlider from "./GamesSlider/GamesSlider";
 import Header from "./Header/Header";
 

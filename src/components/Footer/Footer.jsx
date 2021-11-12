@@ -1,8 +1,8 @@
 import React from "react";
-import { MailIcon, PhoneIcon } from "../../assets/Icons";
 import Container from "../Layout/Container";
 import styles from "./Footer.module.scss";
 import Subscribe from "./Subscribe/Subscribe";
+import { MailIcon, PhoneIcon } from "../../assets/Icons/index";
 
 function Footer() {
   return (
@@ -13,7 +13,7 @@ function Footer() {
       <div className={styles.s__address}>
         <Container className={styles.address}>
           <div className={styles.author}>
-            Design/Front End by Gee -  
+            Design/Front End by Gee -
             <a href="https://github.com/geniilsonfernandes"> Github</a> |
             Desvolvido com ReactJs
           </div>

@@ -1,10 +1,10 @@
 import { useEffect } from "react";
 import Footer from "./components/Footer/Footer";
-import Navegation from "./components/Nav/Navegation";
 import useMedia from "./Hooks/useMedia";
 import Router from "./Router/Router";
 import "./styles/main.css";
 import NavMobile from "./components/Nav/NavMobile/NavMobile";
+import NavDesktop from "./components/Nav/NavDesktop/NavDesktop";
 function App() {
   const match = useMedia("(max-width: 850px)");
   useEffect(() => {
@@ -12,7 +12,7 @@ function App() {
   }, [match]);
   return (
     <>
-      {match ? <NavMobile /> : <Navegation />}
+      {match ? <NavMobile /> : <NavDesktop />}
       <Router />
       <Footer />
     </>

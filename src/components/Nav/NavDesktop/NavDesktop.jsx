@@ -1,14 +1,16 @@
-import React, { useState } from "react";
-import styles from "./Navegation.module.scss";
-import Container from "../Layout/Container";
-import Search from "../Search/Search";
-import User from "./User/User";
-import NavLinks from "./NavLinks/NavLinks";
-import NavAuth from "./NavAuth/NavAuth";
+import React from "react";
 import { useLocation } from "react-router";
+import { useState } from "react/cjs/react.development";
+import Container from "../../Layout/Container";
+import Search from "../../Search/Search";
+import NavAuth from "./NavAuth/NavAuth";
+import NavLinks from "./NavLinks/NavLinks";
+import User from "./User/User";
+import styles from "./NavDesktop.module.scss";
 
-function Navegation() {
+function NavDesktop() {
   const { pathname } = useLocation();
+  // eslint-disable-next-line
   const [login, setLogin] = useState(false);
 
   return (
@@ -24,4 +26,4 @@ function Navegation() {
   );
 }
 
-export default Navegation;
+export default NavDesktop;

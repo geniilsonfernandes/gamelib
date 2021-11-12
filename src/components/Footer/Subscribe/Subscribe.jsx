@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { CheckIcon, checkIcon, UserIcon } from "../../../assets/Icons";
+import { CheckIcon, UserIcon } from "../../../assets/Icons";
 import styles from "./Subscribe.module.scss";
 import Loading from "./../../helpers/Loading/Loading";
 
@@ -52,7 +52,7 @@ function Subscribe() {
             />
 
             <button type="submit" className={styles.submit}>
-              {loading ? <Loading  /> : "Subscribe now"}
+              {loading ? <Loading /> : "Subscribe now"}
             </button>
           </motion.form>
         ) : (

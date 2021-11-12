@@ -1,5 +1,5 @@
 import React from "react";
-import { ArrowDonwIcon } from "../../../assets/Icons";
+import { ArrowDonwIcon } from "../../../../assets/Icons";
 import styles from "./user.module.scss";
 
 function User() {

@@ -10,25 +10,6 @@ import { ArrowIcon } from "../../../assets/Icons";
 SwiperCore.use([Navigation, Pagination]);
 
 const games = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-const slideResposiveConfig = {
-  // when window width is >= 640px
-  375: {
-    spaceBetween: 10,
-    slidesPerView: 1,
-    width: 234,
-  },
-  640: {
-    spaceBetween: 16,
-    slidesPerView: 2,
-  },
-  700: {
-    spaceBetween: 16,
-    slidesPerView: 3,
-  },
-  768: {
-    slidesPerView: 5,
-  },
-};
 
 function GamesSlider({ title }) {
   const [next, setNext] = useState(null);

@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./Games.module.scss";
+//import styles from "./Games.module.scss";
 
 function Games() {
   return <>may</>;

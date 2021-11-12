@@ -1,5 +1,5 @@
 import React from "react";
-import ButtonSmall from "../../buttons/ButtonSmall/ButtonSmall";
+import ButtonSmall from "../../../buttons/ButtonSmall/ButtonSmall";
 import styles from "./NavAuth.module.scss";
 function NavAuth() {
   return (

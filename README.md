@@ -8,7 +8,7 @@ A ideia do app é:
 
 _"Salve os jogos que você gosta de jogar criando uma biblioteca de jogos e podendo compartilhar sua lista criada"._
 
-**PS:** Grande inspiração foi em serviços como a Epic Game, Steam e Battle net. 
+**PS:** Grande inspiração foi em serviços como a Epic Game, Steam e Battle net, projeto todo resposivo.
 
 ## Objetivo?
 
@@ -33,11 +33,11 @@ Telas feitas por mim com figma:[Game lib](https://www.figma.com/file/dO9778ghJnh
 
 - Discover
 
-  - essa tela conta com:
-    - Trending games
-    - Noticias relacionadas
-    - Artigo do blog
-    - Últimos jogos Avaliados
+  - Trending games
+  - Games por categoria
+  - Noticias relacionadas
+  - Artigo do blog
+  - Últimos jogos Avaliados
 
 - Search
 
@@ -48,7 +48,7 @@ Telas feitas por mim com figma:[Game lib](https://www.figma.com/file/dO9778ghJnh
 
   - Input mostra quando usuário está em escrevendo nele
   - Validação de email feita pelo próprio browser
-  - envio de dados _(fake)_ e feedback
+  - Envio de dados _(fake)_ e feedback
 
 ## Proximas paginas e funcionalidades
 
@@ -57,7 +57,7 @@ Telas feitas por mim com figma:[Game lib](https://www.figma.com/file/dO9778ghJnh
 
 - Auth
 
-  - log in e Sign up
+  - Log in e Sign up
   - Recuperar senha
 
 - Blog
@@ -66,4 +66,5 @@ Telas feitas por mim com figma:[Game lib](https://www.figma.com/file/dO9778ghJnh
 
 - Perfil
 
-  - lista de jogos jogados
+  - Lista de jogos jogados
+  - Grafico com generos mais jogados

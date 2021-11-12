@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { CheckIcon, UserIcon } from "../../../assets/Icons";
+import { CheckIcon, UserIcon } from "../../../assets/Icons/Icon";
 import styles from "./Subscribe.module.scss";
 import Loading from "./../../helpers/Loading/Loading";
 

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styles from "./Search.module.scss";
-import { LoadingIcon, SearchIcon } from "../../assets/Icons";
+import { LoadingIcon, SearchIcon } from "../../assets/Icons/Icon";
 import ModalSuggestion from "./ModalSuggestion/ModalSuggestion";
 import { AnimatePresence } from "framer-motion";
 function Search() {

@@ -7,8 +7,13 @@
     --white--900: #f5f5f5;
     /* palete */
     /* Brand colors */
-    --primary: #9941f2;
-    --primary--hover: #ca55e7;
+
+    
+
+    /* guadians: #e62c70  */
+    /* purperain: #9941f2  */
+    --primary: #e62c70;
+    --primary--hover: #c4215d;
     /* Brand colors */
     /* control */
     --components-margin: 30px;
@@ -17,7 +22,7 @@
     --gradient: linear-gradient(91.99deg, var(--primary) -8.15%, #00ffe0 124.64%);
     /* especial colors  */
     /* layout vars */
-    --global--radios: 0;
+    --global--radios: 2px;
     --glabal--margin: var(--components-margin) 0;
     /* layout vars */
 }
@@ -25,6 +30,7 @@
 * {
     padding: 0;
     margin: 0;
+
     box-sizing: border-box;
 }
 

@@ -15,9 +15,8 @@ function BlogCard() {
         <h2>Marvel's Guardians of the Galaxy - Review</h2>
         <div className={styles.info}>
           <span className={styles.info__inline}>
-            Written by <span> Thomas Paul</span>
+            By <span> Thomas Paul</span>
           </span>
-          |
           <span className={styles.info__inline}>
             Published on <span>9. 6. 2021</span>
           </span>

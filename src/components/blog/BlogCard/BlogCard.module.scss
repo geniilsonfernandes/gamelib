@@ -52,12 +52,21 @@
   display: flex;
   gap: 16px;
   font-size: 13px;
+  line-height: 18px;
   color: var(--dark--600);
-  padding-top: 4px;
+  padding-top: 16px;
   .info__inline {
+    white-space: nowrap;
     color: inherit;
+    display: inline;
+
     span {
+      display: inline;
       color: var(--primary);
     }
+  }
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    gap: 8px;
   }
 }

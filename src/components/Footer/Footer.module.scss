@@ -1,6 +1,3 @@
-.s__footer {
-}
-
 .s__address {
   background-color: var(--dark--700);
 }
@@ -9,6 +6,13 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  @media screen and (max-width: 768px) {
+    text-align: center;
+    flex-direction: column;
+    padding: 40px 16px;
+    height: auto;
+    gap: 24px;
+  }
 }
 .author {
   font-size: 15px;
@@ -24,15 +28,22 @@
     list-style: none;
     display: flex;
     gap: 24px;
+    @media screen and (max-width: 768px) {
+      text-align: center;
+      flex-direction: column;
+    }
     li {
       a {
         display: flex;
         align-items: center;
+        justify-content: center;
         gap: 10px;
         font-size: 14px;
         color: var(--dark--600);
         transition: color ease-in-out 200ms;
-
+        svg path {
+          fill: var(--primary);
+        }
         &:hover {
           color: var(--primary);
         }

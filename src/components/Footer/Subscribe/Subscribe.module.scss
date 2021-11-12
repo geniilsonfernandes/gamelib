@@ -7,63 +7,77 @@
 }
 
 .form {
-  position: relative;
-  width: 100%;
-  max-width: 575px;
-  height: 65px;
-  border-radius: var(--global--radios);
-  overflow: hidden;
-  display: flex;
   background-color: var(--dark--900);
+  position: relative;
+  height: 65px;
+  width: 100%;
+  max-width: 500px;
+  padding: 8px 8px 8px 65px;
+  border-radius: var(--global--radios);
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+
+  transition: padding ease-in-out 200ms;
 
   &[data-input-change="true"] {
+    padding: 8px 8px 8px 8px;
     border: 1px solid var(--primary);
   }
+
+  @media screen and (max-width: 768px) {
+    padding: 8px 8px 8px 32px;
+  }
+
   .icon {
     display: inline-flex;
     height: 100%;
-    width: 40px;
-    align-items: center;
-    justify-content: center;
     width: 65px;
     position: absolute;
     left: 0;
     top: 0;
+
+    align-items: center;
+    justify-content: center;
     transition: left ease-in-out 200ms;
+
     &[data-input-change="true"] {
-      left: -100px;
+      left: -65px;
+    }
+
+    @media screen and (max-width: 768px) {
+      width: 40px;
     }
   }
   .input {
     outline: none;
     border: none;
-    max-width: 575px;
-    height: 65px;
+
+    height: 100%;
     width: 100%;
-    background-color: var(--dark--900);
+    background-color: transparent;
     font-size: 16px;
     color: var(--white--900);
-    padding: 16px 30% 16px 65px;
+    padding: 16px 16px 16px 16px;
     transition: padding ease-in-out 200ms;
-    &[data-input-change="true"] {
-      padding: 16px 30% 16px 16px;
+    @media screen and (max-width: 768px) {
+      padding: 8px;
     }
   }
   .submit {
-    position: absolute;
-    z-index: 99;
-    top: 0;
-    height: calc(100% - 16px);
-    margin: 8px;
     border: none;
     outline: none;
     padding: 0 20px;
-    right: 0;
+    white-space: nowrap;
     background-color: var(--primary);
     font-size: 14px;
     font-weight: 600;
     color: var(--white--900);
     border-radius: var(--global--radios);
+    @media screen and (max-width: 768px) {
+      font-size: 12px;
+      padding: 0 10px;
+    }
   }
 }
 .term {
@@ -71,8 +85,21 @@
   padding: 27px 0;
   max-width: 500px;
   text-align: center;
-
+  font-size: 14px;
   span {
     color: var(--primary);
   }
+}
+
+.submited {
+  padding: 0 20px;
+  max-width: 575px;
+  width: 150px;
+  height: 65px - 16px;
+  align-items: center;
+  gap: 16px;
+  font-weight: 600;
+  justify-content: center;
+  display: inline-flex;
+  background-color: var(--primary);
 }

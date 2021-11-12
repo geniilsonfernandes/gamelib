@@ -59,7 +59,8 @@ function GamesSlider({ title }) {
         <Swiper
           // breakpoints={slideResposiveConfig}
           slidesPerView={1}
-          width={230}
+          className={styles.slide}
+          width={224}
           spaceBetween={16}
           wrapperTag="div"
           navigation={{

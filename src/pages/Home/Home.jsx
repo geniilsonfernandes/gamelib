@@ -1,5 +1,5 @@
 import React from "react";
-import MainContainer from "../../components/Layout/MainContainer";
+import Container from "../../components/Layout/Container";
 import Notices from "../../components/Notices/Notices";
 import GamesSlider from "./GamesSlider/GamesSlider";
 import Header from "./Header/Header";
@@ -8,11 +8,11 @@ function Home() {
   return (
     <>
       <Header />
-      <MainContainer>
+      <Container wrapper="main">
         <GamesSlider title="Trending games" />
         <Notices />
         <GamesSlider title="RPG" />
-      </MainContainer>
+      </Container>
     </>
   );
 }

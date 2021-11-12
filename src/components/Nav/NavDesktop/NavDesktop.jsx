@@ -10,8 +10,7 @@ import styles from "./NavDesktop.module.scss";
 
 function NavDesktop() {
   const { pathname } = useLocation();
-  // eslint-disable-next-line
-  const [login, setLogin] = useState(false);
+  const login = false;
 
   return (
     <nav className={styles.nav} data-home={pathname === "/"}>

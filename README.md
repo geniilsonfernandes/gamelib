@@ -1,70 +1,69 @@
-# Getting Started with Create React App
+# Game lib
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![Preview-Screens](ssdsds.png)
 
-## Available Scripts
+## Sobre o Projeto
 
-In the project directory, you can run:
+A ideia do app é:
 
-### `npm start`
+_"Salve os jogos que você gosta de jogar criando uma biblioteca de jogos e podendo compartilhar sua lista criada"._
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+**PS:** Grande inspiração foi em serviços como a Epic Game, Steam e Battle net. 
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Objetivo?
 
-### `npm test`
+Este projeto é para meu portfólio pessoal, meu objetivo é sempre melhorar minhas habilidades e aprender e melhorar meus processo de desenvolvimento e me tornar um Dev melhor.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Libs Usadas
 
-### `npm run build`
+- Frame motion
+- Swiper Slider
+- React Route
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Observações sobre esse projeto
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1 - A funcionalidade de log in/Sign in sao apenas visual
+2 - A funcionalidade de search e cateogrias não funcional.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## UI
 
-### `npm run eject`
+Telas feitas por mim com figma:[Game lib](https://www.figma.com/file/dO9778ghJnhzasDj6FA7ja/GameLib?node-id=19%3A2)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Funcionalidades
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Discover
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+  - essa tela conta com:
+    - Trending games
+    - Noticias relacionadas
+    - Artigo do blog
+    - Últimos jogos Avaliados
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- Search
 
-## Learn More
+  - Pesquisar por nome de jogo
+  - O componente mostra uma sugestão de categoria que vai redirecionar para página de jogos relacionados
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Subscribe
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+  - Input mostra quando usuário está em escrevendo nele
+  - Validação de email feita pelo próprio browser
+  - envio de dados _(fake)_ e feedback
 
-### Code Splitting
+## Proximas paginas e funcionalidades
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- Conecta com firebase para armazenar dados do usuário e autenticação
+- Conecta com api - [Rawg](https://rawg.io/)
 
-### Analyzing the Bundle Size
+- Auth
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+  - log in e Sign up
+  - Recuperar senha
 
-### Making a Progressive Web App
+- Blog
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+  - Post Single Page
 
-### Advanced Configuration
+- Perfil
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+  - lista de jogos jogados

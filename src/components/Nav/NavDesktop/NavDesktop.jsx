@@ -1,6 +1,5 @@
 import React from "react";
 import { useLocation } from "react-router";
-import { useState } from "react/cjs/react.development";
 import Container from "../../Layout/Container";
 import Search from "../../Search/Search";
 import NavAuth from "./NavAuth/NavAuth";

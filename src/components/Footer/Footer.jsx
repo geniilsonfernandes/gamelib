@@ -2,7 +2,7 @@ import React from "react";
 import Container from "../Layout/Container";
 import styles from "./Footer.module.scss";
 import Subscribe from "./Subscribe/Subscribe";
-import { MailIcon, PhoneIcon } from "../../assets/Icons/index";
+//import { MailIcon, PhoneIcon } from "../../assets/Icons";
 
 function Footer() {
   return (
@@ -21,12 +21,12 @@ function Footer() {
             <ul>
               <li>
                 <a href="mailto:geilsonfernandes">
-                  <MailIcon /> geniilsonfernandes@gmail.com
+                  > geniilsonfernandes@gmail.com
                 </a>
               </li>
               <li>
                 <a href="https://api.whatsapp.com/send?phone=5522996021627">
-                  <PhoneIcon /> (22) 9 9602-1627
+                   (22) 9 9602-1627
                 </a>
               </li>
             </ul>

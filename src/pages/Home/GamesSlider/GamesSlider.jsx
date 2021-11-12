@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import GameCard from "../../../components/GameCard/GameCard";
-
+import { ArrowIcon } from "../../../Icons/Icon";
 import styles from "./GamesSlider.module.scss";
 // Swiper
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -30,10 +30,10 @@ function GamesSlider({ title }) {
           <hr />
           <div className={styles.control}>
             <button className={styles.control__button} name="prev" ref={prevEl}>
-              t
+              <ArrowIcon />
             </button>
             <button className={styles.control__button} name="next" ref={nextEl}>
-              t
+              <ArrowIcon />
             </button>
           </div>
         </div>

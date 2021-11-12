@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styles from "./Search.module.scss";
-
+import { LoadingIcon, SearchIcon } from "../../Icons/Icon";
 import ModalSuggestion from "./ModalSuggestion/ModalSuggestion";
 import { AnimatePresence } from "framer-motion";
 function Search() {
@@ -32,10 +32,13 @@ function Search() {
           onFocus={() => setShowModal(true)}
           onBlur={() => setShowModal(false)}
         />
-        {loading && <span className={styles.loading}>l</span>}
-
+        {loading && (
+          <span className={styles.loading}>
+            <LoadingIcon />
+          </span>
+        )}
         <button type="submit" className={styles.submit} disabled={loading}>
-          -
+          <SearchIcon />
         </button>
       </form>
       <AnimatePresence initial={false}>

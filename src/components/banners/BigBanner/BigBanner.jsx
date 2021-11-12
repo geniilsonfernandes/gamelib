@@ -3,6 +3,7 @@ import styles from "./BigBanner.module.scss";
 import image from "../../../images/game__mock_02.png";
 import Tag from "./../../Tag/Tag";
 import { Link } from "react-router-dom";
+import { GamePadIcon } from "../../../Icons/Icon";
 
 function BigBanner() {
   return (
@@ -23,7 +24,7 @@ function BigBanner() {
           </p>
           <div className={styles.button__group}>
             <Link to="/" className={styles.action__button}>
-              Let's go
+              Let's go <GamePadIcon />
             </Link>
           </div>
         </div>

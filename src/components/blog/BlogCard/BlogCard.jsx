@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./BlogCard.module.scss";
 import Tag from "./../../Tag/Tag";
-import image from "../../../assets/images/game__mock_03.png";
+import image from "../../../images/game__mock_03.png";
 import { Link } from "react-router-dom";
 function BlogCard() {
   return (

@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./GameCard.module.scss";
-import image from "../../assets/images/game__mock.png";
+import image from "../../images/game__mock.png";
 import GamePhoto from "./GamePhoto/GamePhoto";
 import GameDescription from "./GameDescription/GameDescription";
 

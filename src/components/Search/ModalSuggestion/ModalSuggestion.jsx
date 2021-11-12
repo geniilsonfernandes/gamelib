@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./ModalSuggestion.module.scss";
-import image from "../../../assets/images/genres/adventure__genre.png";
+import image from "../../../images/genres/adventure__genre.png";
 import GenreCard from "./GenreCard/GenreCard";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";

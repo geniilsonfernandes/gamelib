@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from "react";
 import ButtonSmall from "../../../components/buttons/ButtonSmall/ButtonSmall";
 import Container from "../../../components/Layout/Container";
 import styles from "./Header.module.scss";
-import joystick from "../../../assets/images/Joystick.png";
+import joystick from "../../../images/Joystick.png";
 
 function Header() {
   const backgroundEl = useRef(null);

@@ -1,6 +1,8 @@
 # Game lib
 
-![Preview-Screens](ui.png)
+![Preview-Screens](ui_01.png)
+
+video da interface: ![Video](https://www.loom.com/share/a2ed8433982b49d181dd27b5f9016888)
 
 ## Sobre o Projeto
 

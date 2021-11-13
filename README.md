@@ -1,6 +1,6 @@
 # Game lib
 
-![Preview-Screens](ssdsds.png)
+![Preview-Screens](ui.png)
 
 ## Sobre o Projeto
 
@@ -8,7 +8,7 @@ A ideia do app é:
 
 _"Salve os jogos que você gosta de jogar criando uma biblioteca de jogos e podendo compartilhar sua lista criada"._
 
-**PS:** Grande inspiração foi em serviços como a Epic Game, Steam e Battle net, projeto todo resposivo.
+**PS:** Grande inspiração foi em serviços como a Epic Game, Steam e Battle net e projeto todo resposivo.
 
 ## Objetivo?
 

@@ -8,7 +8,7 @@ function Router() {
     <>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="my" element={<Games />} />
+        <Route path="my:id" element={<Games />} />
       </Routes>
     </>
   );

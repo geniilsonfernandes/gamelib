@@ -2,7 +2,7 @@
 
 ![Preview-Screens](ui_01.png)
 
-video da interface: [Loom] (https://www.loom.com/share/957ba2cd9fd7446aba01b0a3ae10a7b4)
+video da interface: [Loom] (https://www.loom.com/share/963163cffe0f4d728b51c5fe20aa126e)
 
 ## Sobre o Projeto
 

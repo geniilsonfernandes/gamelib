@@ -3,18 +3,18 @@ import Votes from "../Votes/Votes";
 import styles from "./GamePhoto.module.scss";
 import Star from "../Star/Star";
 
-function GamePhoto({ photo, alt, votes }) {
+function GamePhoto({ image, alt, votes }) {
   return (
     <div className={styles.game__photo}>
       <div
         className={styles.game__state}
-        style={{ background: `#44d653` }}
+        style={{ background: `var(--primary)` }}
       ></div>
       <div className={styles.menu__top}>
         <Votes votes={votes} />
         <Star />
       </div>
-      <img src={photo} alt={alt} />
+      <img src={image} alt={alt} />
     </div>
   );
 }

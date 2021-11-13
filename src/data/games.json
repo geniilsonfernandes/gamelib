@@ -1,6 +1,15 @@
 [
   {
-    "id": "001",
+    "id": 1,
+    "title": "Need for Speed™ Heat",
+    "description": "Trabalhe de dia e arrisque tudo à noite no Need for Speed™ Heat, corra contra a polícia corrupta da cidade, em eventos das corridas de rua.",
+    "cover__url": "./image/game__highlight__banner.png",
+    "background__url": "./image/game__highlight__banner.png",
+    "genre": "Racing",
+    "publisher": "Electronic Arts Inc"
+  },
+  {
+    "id": 2,
     "title": "Need for Speed™ Heat",
     "description": "Trabalhe de dia e arrisque tudo à noite no Need for Speed™ Heat, corra contra a polícia corrupta da cidade, em eventos das corridas de rua.",
     "cover__url": "https://lh3.googleusercontent.com/proxy/AgKmWdISJcBIrR8G9Q8_4BLES1k7BPqA6UjjIrHoj9NUHnGt3iy0AzHqMtKe0YhOGUgqmf0L5EdjKYTst4kkQra2cS0tiAJW_2Lg4kG7tKtMHB0MK1sfiRb8KEikyQkIg98HiGoQ0JPK6i2nU0TWXg0WiQ",
@@ -9,7 +18,7 @@
     "publisher": "Electronic Arts Inc"
   },
   {
-    "id": "002",
+    "id": 3,
     "title": "Need for Speed™ Heat",
     "description": "Trabalhe de dia e arrisque tudo à noite no Need for Speed™ Heat, corra contra a polícia corrupta da cidade, em eventos das corridas de rua.",
     "cover__url": "https://lh3.googleusercontent.com/proxy/AgKmWdISJcBIrR8G9Q8_4BLES1k7BPqA6UjjIrHoj9NUHnGt3iy0AzHqMtKe0YhOGUgqmf0L5EdjKYTst4kkQra2cS0tiAJW_2Lg4kG7tKtMHB0MK1sfiRb8KEikyQkIg98HiGoQ0JPK6i2nU0TWXg0WiQ",
@@ -18,16 +27,7 @@
     "publisher": "Electronic Arts Inc"
   },
   {
-    "id": "003",
-    "title": "Need for Speed™ Heat",
-    "description": "Trabalhe de dia e arrisque tudo à noite no Need for Speed™ Heat, corra contra a polícia corrupta da cidade, em eventos das corridas de rua.",
-    "cover__url": "https://lh3.googleusercontent.com/proxy/AgKmWdISJcBIrR8G9Q8_4BLES1k7BPqA6UjjIrHoj9NUHnGt3iy0AzHqMtKe0YhOGUgqmf0L5EdjKYTst4kkQra2cS0tiAJW_2Lg4kG7tKtMHB0MK1sfiRb8KEikyQkIg98HiGoQ0JPK6i2nU0TWXg0WiQ",
-    "background__url": "https://lh3.googleusercontent.com/proxy/AgKmWdISJcBIrR8G9Q8_4BLES1k7BPqA6UjjIrHoj9NUHnGt3iy0AzHqMtKe0YhOGUgqmf0L5EdjKYTst4kkQra2cS0tiAJW_2Lg4kG7tKtMHB0MK1sfiRb8KEikyQkIg98HiGoQ0JPK6i2nU0TWXg0WiQ",
-    "genre": "Racing",
-    "publisher": "Electronic Arts Inc"
-  },
-  {
-    "id": "004",
+    "id": 4,
     "title": "Need for Speed™ Heat",
     "description": "Trabalhe de dia e arrisque tudo à noite no Need for Speed™ Heat, corra contra a polícia corrupta da cidade, em eventos das corridas de rua.",
     "cover__url": "https://lh3.googleusercontent.com/proxy/AgKmWdISJcBIrR8G9Q8_4BLES1k7BPqA6UjjIrHoj9NUHnGt3iy0AzHqMtKe0YhOGUgqmf0L5EdjKYTst4kkQra2cS0tiAJW_2Lg4kG7tKtMHB0MK1sfiRb8KEikyQkIg98HiGoQ0JPK6i2nU0TWXg0WiQ",

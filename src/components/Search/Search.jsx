@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import styles from "./Search.module.scss";
 import { LoadingIcon, SearchIcon } from "../../Icons/Icon";
 import ModalSuggestion from "./ModalSuggestion/ModalSuggestion";
-import { AnimatePresence } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 function Search() {
   const [loading, setLoading] = useState(false);
   const [value, setValue] = useState("");
@@ -42,7 +42,17 @@ function Search() {
         </button>
       </form>
       <AnimatePresence initial={false}>
-        {showModal && <ModalSuggestion />}
+        {showModal && (
+          <motion.div
+            className={styles.modal}
+            initial={{ y: -10, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            exit={{ y: -10, opacity: 0 }}
+            transition={{ duration: 0.3 }}
+          >
+            <ModalSuggestion />
+          </motion.div>
+        )}
       </AnimatePresence>
     </div>
   );

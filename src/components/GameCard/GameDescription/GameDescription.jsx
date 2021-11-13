@@ -3,8 +3,7 @@ import { Link } from "react-router-dom";
 import styles from "./GameDescription.module.scss";
 
 function GameDescription({ publisher, title }) {
-  const game = title.substring(0, 23) + "...";
-
+  const game = title.length > 25 ? title.substring(0, 23) + "..." : title;
   return (
     <div className={styles.description}>
       <div className={styles.game}>

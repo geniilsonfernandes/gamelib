@@ -6,12 +6,9 @@ import styles from "./GamesSlider.module.scss";
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Navigation, Pagination } from "swiper";
 import "swiper/swiper-bundle.css";
-
 SwiperCore.use([Navigation, Pagination]);
 
-const games = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-
-function GamesSlider({ title }) {
+function GamesSlider({ title, games }) {
   const [next, setNext] = useState(null);
   const [prev, setPrev] = useState(null);
   const prevEl = useRef(null);
@@ -49,11 +46,17 @@ function GamesSlider({ title }) {
             nextEl: next,
           }}
         >
-          {games.map((id, i) => (
-            <SwiperSlide key={i}>
-              <GameCard />
-            </SwiperSlide>
-          ))}
+          {games &&
+            games.map((game) => (
+              <SwiperSlide key={game.id}>
+                <GameCard
+                  title={game.title}
+                  cover={game.cover}
+                  votes={game.rating}
+                  publisher={game.publisher}
+                />
+              </SwiperSlide>
+            ))}
         </Swiper>
       </div>
     </>

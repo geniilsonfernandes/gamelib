@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "genre": "Adventures",
+    "background": "./image/genres/gamelib__adventures.png",
+    "color": "#9941F2"
+  },
+  {
+    "id": 2,
+    "genre": "RPG",
+    "background": "./image/genres/gamelib__RPG.png",
+    "color": "#F2C241"
+  },
+  {
+    "id": 3,
+    "genre": "Racing",
+    "background": "./image/genres/gamelib__racing.png",
+    "color": "#44D653"
+  }
+]

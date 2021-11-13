@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "rating": 3,
+    "title": "A Plague Tale: Innocence",
+    "cover": "./image/game__a_plague_tale_innocence.png",
+    "publisher": "Focus Entertainment"
+  },
+  {
+    "id": 2,
+    "rating": 4,
+    "title": "Assassin's Creed Valhalla",
+    "cover": "./image/game__assassins_creed_vallhala.png",
+    "publisher": "Ubisoft"
+  },
+  {
+    "id": 3,
+    "rating": 3,
+    "title": "Control",
+    "cover": "./image/game__control.png",
+    "publisher": "505 Games"
+  },
+  {
+    "id": 4,
+    "rating": 5,
+    "title": "Ghost of Tsushima",
+    "cover": "./image/game__ghost_of_tsushima.png",
+    "publisher": "Sony Interactive Entertainment"
+  },
+  {
+    "id": 5,
+    "rating": 4,
+    "title": "Hades",
+    "cover": "./image/game__hades.png",
+    "publisher": "Supergiant Games"
+  },
+  {
+    "id": 6,
+    "rating": 5,
+    "title": "Immortals Fenyx Rising",
+    "cover": "./image/game__imortal_fenyx_rising.png",
+    "publisher": "Ubisoft"
+  },
+  {
+    "id": 7,
+    "rating": 4,
+    "title": "The Pathless",
+    "cover": "./image/game__the_pathless.png",
+    "publisher": "Giant Squid"
+  },
+  {
+    "id": 8,
+    "rating": 5,
+    "title": "The Witcher 3: Wild Hunt ",
+    "cover": "./image/game__the_witcher_3.png",
+    "publisher": "CD Project Red"
+  }
+]

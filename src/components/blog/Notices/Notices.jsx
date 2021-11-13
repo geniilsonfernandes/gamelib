@@ -6,7 +6,7 @@ import games from "../../../data/games.json";
 import article from "../../../data/article.json";
 
 function Notices() {
-  const gameBanner = games.filter((game) => game.id === "001");
+  const gameBanner = games.filter((game) => game.id === 1);
 
   return (
     <section style={{ position: "relative" }}>

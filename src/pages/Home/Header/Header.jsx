@@ -10,7 +10,8 @@ function Header() {
   useEffect(() => {
     const paralaxScroll = (e) => {
       const nodeEl = backgroundEl.current;
-      nodeEl.style.backgroundPosition = `center -${window.scrollY / 3}px`;
+      if (nodeEl !== null)
+        nodeEl.style.backgroundPosition = `center -${window.scrollY / 3}px`;
     };
     window.addEventListener("scroll", paralaxScroll);
     return () => {

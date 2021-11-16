@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import styles from "./Subscribe.module.scss";
 import Loading from "./../../helpers/Loading/Loading";
-import { CheckIcon, UserIcon } from "../../../Icons/Icon";
+import { CheckIcon, MailIcon } from "../../../Icons/Icon";
 
 function Subscribe() {
   const [showIcon, setShowIcon] = useState(false);
@@ -38,7 +38,7 @@ function Subscribe() {
             data-input-change={showIcon}
           >
             <span className={styles.icon} data-input-change={showIcon}>
-              <UserIcon />
+              <MailIcon />
             </span>
             <input
               type="email"

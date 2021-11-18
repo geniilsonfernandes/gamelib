@@ -1,41 +1,56 @@
-import React, { useEffect, useRef } from "react";
-import ButtonSmall from "../../../components/buttons/ButtonSmall/ButtonSmall";
+import React, { useState } from "react";
+import { useNavigate } from "react-router";
 import Container from "../../../components/Layout/Container";
+import useMedia from "../../../Hooks/useMedia";
+import { SearchIcon } from "../../../Icons/Icon";
 import styles from "./Header.module.scss";
-import joystick from "../../../images/Joystick.png";
 
 function Header() {
-  const backgroundEl = useRef(null);
+  const match = useMedia("(max-width: 850px)");
+  const [inputFocus, setInputFocus] = useState(false);
+  const [searchValue, setSearchValue] = useState("");
+  const navigate = useNavigate();
+  function handleSubmit(e) {
+    e.preventDefault();
+    if (searchValue === "") return;
+    navigate(`result/${searchValue}`);
+  }
 
-  useEffect(() => {
-    const paralaxScroll = (e) => {
-      const nodeEl = backgroundEl.current;
-      if (nodeEl !== null)
-        nodeEl.style.backgroundPosition = `center -${window.scrollY / 3}px`;
-    };
-    window.addEventListener("scroll", paralaxScroll);
-    return () => {
-      window.removeEventListener("scroll", paralaxScroll);
-    };
-  }, []);
+
+  
+
 
   return (
-    <header className={styles.header} ref={backgroundEl}>
+    <header className={styles.header}>
       <Container className={styles.header__content}>
-        <div className={styles.left}>
-          <div className={styles.left__content}>
-            <h1>
-              <span>Make you list of games </span> you played or i’ll play
-            </h1>
-            <p>Create a list, share and search news games</p>
-            <div className={styles.group__cta}>
-              <ButtonSmall>Create my lib</ButtonSmall>
-            </div>
+        <h1>
+          <span>Search your game</span> and save your favorites
+        </h1>
+        <form
+          action=""
+          className={styles.wrapper__form}
+          onSubmit={handleSubmit}
+        >
+          <div className={styles.wrapper__input} data-focus={inputFocus}>
+            {!match && (
+              <span className={styles.icon} data-focus={inputFocus}>
+                <SearchIcon />
+              </span>
+            )}
+            <input
+              className={styles.input}
+              type="text"
+              placeholder="The Witcher 3: Wild Hunt"
+              value={searchValue}
+              onChange={({ target }) => setSearchValue(target.value)}
+              onFocus={() => setInputFocus(true)}
+              onBlur={() => setInputFocus(searchValue !== "" ? true : false)}
+            />
+            <button className={styles.button} type="submit">
+              {match ? <SearchIcon /> : "Seach Now"}
+            </button>
           </div>
-        </div>
-        <div className={styles.right}>
-          <img src={joystick} alt="joystick" />
-        </div>
+        </form>
       </Container>
     </header>
   );

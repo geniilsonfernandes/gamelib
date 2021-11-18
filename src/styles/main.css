@@ -23,7 +23,7 @@
     --gradient: linear-gradient(91.99deg, var(--primary) -8.15%, #00ffe0 124.64%);
     /* especial colors  */
     /* layout vars */
-    --global--radios: 3px;
+    --global--radios: 0;
     --glabal--margin: var(--components-margin) 0;
     /* layout vars */
 }

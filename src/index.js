@@ -1,8 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter } from "react-router-dom";
-import { UserProvider } from "./Hooks/user/useProvider";
-import { SearchProvider } from "./Hooks/search/SearchProvider";
+import { UserProvider } from "./Context/User";
+import { SearchProvider } from "./Context/Search";
 import App from "./App";
 
 ReactDOM.render(

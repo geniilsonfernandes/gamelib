@@ -9,15 +9,16 @@ import styles from "./NavDesktop.module.scss";
 
 function NavDesktop() {
   const { pathname } = useLocation();
+  const ishome = pathname === "/";
   const login = false;
 
   return (
-    <nav className={styles.nav} data-home={pathname === "/"}>
+    <nav className={styles.nav} data-home={ishome}>
       <Container className={styles.nav__item}>
         <div className={styles.right}>
           <NavLinks />
         </div>
-        <Search />
+        {!ishome && <Search />}
         <div className={styles.left}>{login ? <User /> : <NavAuth />}</div>
       </Container>
     </nav>

@@ -1,14 +1,14 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 import Home from "../pages/Home/Home";
-import Games from "./../pages/Games/Games";
+import Results from "./../pages/Results/Results";
 
 function Router() {
   return (
     <>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="my:id" element={<Games />} />
+        <Route path="result/:id" element={<Results />} />
       </Routes>
     </>
   );

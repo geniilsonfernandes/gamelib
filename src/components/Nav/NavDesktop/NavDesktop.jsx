@@ -6,7 +6,7 @@ import NavAuth from "./NavAuth/NavAuth";
 import NavLinks from "./NavLinks/NavLinks";
 import User from "./User/User";
 import styles from "./NavDesktop.module.scss";
-import { useUser } from "../../../Hooks/User/useUser";
+import { useUser } from "../../../Hooks/user/useUser";
 
 function NavDesktop() {
   const { pathname } = useLocation();

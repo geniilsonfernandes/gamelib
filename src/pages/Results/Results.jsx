@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router";
 //import styles from "./Results.module.scss";
-import { useSearch } from "./../../Hooks/Search/useSearch";
+import { useSearch } from "../../Hooks/search/useSearch";
 
 function Results() {
   const { SearchValue } = useSearch();

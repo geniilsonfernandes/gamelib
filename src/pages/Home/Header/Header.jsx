@@ -16,10 +16,6 @@ function Header() {
     navigate(`result/${searchValue}`);
   }
 
-
-  
-
-
   return (
     <header className={styles.header}>
       <Container className={styles.header__content}>

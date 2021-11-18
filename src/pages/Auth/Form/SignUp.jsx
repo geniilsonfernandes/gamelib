@@ -4,11 +4,12 @@ import { GoogleIcon, LookIcon, MailIcon, UserIcon } from "../../../Icons/Icon";
 import styles from "./Form.module.scss";
 import InputForm from "./InputForm/InputForm";
 import Term from "./../Term/Term";
-function SignUp() {
+
+function SignUp({ type }) {
   return (
     <div className={styles.form}>
       <div className={styles.type}>
-        Do you have account? <Link to="/signin"> Sign in</Link>
+        Do you have account? <Link to="/auth/login"> {type} Sign in</Link>
       </div>
       <h1>Get started with easily register</h1>
       <p>Free register and you can enjoy it</p>

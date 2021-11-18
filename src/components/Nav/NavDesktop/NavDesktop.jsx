@@ -6,12 +6,12 @@ import NavAuth from "./NavAuth/NavAuth";
 import NavLinks from "./NavLinks/NavLinks";
 import User from "./User/User";
 import styles from "./NavDesktop.module.scss";
+import { useUser } from "../../../Hooks/User/useUser";
 
 function NavDesktop() {
   const { pathname } = useLocation();
   const ishome = pathname === "/";
-  const login = false;
-
+  const { login } = useUser();
   return (
     <nav className={styles.nav} data-home={ishome}>
       <Container className={styles.nav__item}>

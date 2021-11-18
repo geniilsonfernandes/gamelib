@@ -1,23 +1,22 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { GoogleIcon, LookIcon, MailIcon, UserIcon } from "../../../Icons/Icon";
+import { GoogleIcon, LookIcon, MailIcon } from "../../../Icons/Icon";
 import Term from "../Term/Term";
 import styles from "./Form.module.scss";
 import InputForm from "./InputForm/InputForm";
-function SignIn() {
+function LogIn() {
   return (
     <div className={styles.form}>
       <div className={styles.type}>
-        Do you have account? <Link to="/signin"> Sign in</Link>
+        Don't have a account? <Link to="/auth/signup"> Sign Up</Link>
       </div>
-      <h1>Get started with easily register</h1>
+      <h1>login || Get started with easily register</h1>
       <p>Free register and you can enjoy it</p>
       <form action="" className={styles.form__control}>
-        <InputForm placeholder="Username" type="text" Icon={UserIcon} />
         <InputForm placeholder="Email" type="email" Icon={MailIcon} />
         <InputForm placeholder="Password" type="password" Icon={LookIcon} />
         <div className={styles.form__buttons}>
-          <button className={styles.submit}> Sign up</button> <span>or</span>
+          <button className={styles.submit}> Log In</button> <span>or</span>
           <button className={styles.icon__btn}>
             <GoogleIcon />
           </button>
@@ -28,4 +27,4 @@ function SignIn() {
   );
 }
 
-export default SignIn;
+export default LogIn;

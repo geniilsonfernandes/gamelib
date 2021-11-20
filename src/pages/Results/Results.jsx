@@ -8,10 +8,14 @@ import GameCard from "./../../components/GameCard/GameCard";
 
 const key = "65fbd76f50e342e8bd866b7e28d30e75";
 const ghost = new Array(20).fill(null).map((_, i) => i);
+
+
 function Results() {
   const params = useParams();
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(true);
+
+
   useEffect(() => {
     const fetchGames = async () => {
       try {

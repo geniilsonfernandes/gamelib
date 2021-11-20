@@ -2,3 +2,29 @@
   display: flex;
   gap: 16px;
 }
+
+.link {
+  display: inline-flex;
+  align-items: center;
+  height: 40px;
+  background-color: var(--primary);
+  outline: none;
+  border: none;
+  font-size: 16px;
+  border-radius: 4px;
+  padding: 0 16px;
+  color: var(--white--900);
+  transition: background-color ease-in-out 300ms;
+
+  &:hover {
+    background-color: var(--primary--hover);
+  }
+}
+[data-highlight="false"] {
+  background-color: transparent;
+  transition: color ease-in-out 300ms;
+  &:hover {
+    background-color: transparent;
+    color: var(--primary--hover);
+  }
+}

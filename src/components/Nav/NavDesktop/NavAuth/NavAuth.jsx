@@ -1,13 +1,13 @@
 import React from "react";
-import ButtonSmall from "../../../buttons/ButtonSmall/ButtonSmall";
+import { Link } from "react-router-dom";
 import styles from "./NavAuth.module.scss";
 function NavAuth() {
   return (
     <div className={styles.auth}>
-      <ButtonSmall highlight={false} path="auth/login">
+      <Link highlight={false} to="auth/login" className={styles.link} data-highlight="false">
         Log in
-      </ButtonSmall>
-      <ButtonSmall path="auth/signup">Sign up</ButtonSmall>
+      </Link>
+      <Link to="auth/signup" className={styles.link}>Sign up</Link>
     </div>
   );
 }

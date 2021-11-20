@@ -17,3 +17,5 @@ export { ReactComponent as EyeIcon } from "./eye-icon.svg";
 export { ReactComponent as UserIcon } from "./user-icon.svg";
 export { ReactComponent as LookIcon } from "./lock-icon.svg";
 export { ReactComponent as MailIcon } from "./mail-icon.svg";
+export { ReactComponent as ListIcon } from "./list-icon.svg";
+export { ReactComponent as GridIcon } from "./grid-icon.svg";

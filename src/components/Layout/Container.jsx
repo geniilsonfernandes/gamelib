@@ -3,7 +3,9 @@ import styles from "./Container.module.css";
 function Container({ children, className, wrapper }) {
   const HmtlTag = wrapper || "div";
   return (
-    <HmtlTag className={`${styles.container} ${className}`}>{children}</HmtlTag>
+    <HmtlTag className={`${styles.container} ${className || ""}`}>
+      {children}
+    </HmtlTag>
   );
 }
 

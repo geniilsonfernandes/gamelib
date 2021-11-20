@@ -1,20 +1,10 @@
 import React from "react";
-import { useNavigate } from "react-router";
 
 import styles from "./ButtonSmall.module.scss";
 
-function ButtonSmall({ children, highlight, path }) {
-  const navigate = useNavigate();
-  function handleClick() {
-    navigate(path || "/");
-    console.log(path || "/");
-  }
+function ButtonSmall({ children, highlight }) {
   return (
-    <button
-      className={styles.btn}
-      data-highlight={true && highlight}
-      onClick={handleClick}
-    >
+    <button className={styles.btn} data-highlight={true && highlight}>
       {children}
     </button>
   );

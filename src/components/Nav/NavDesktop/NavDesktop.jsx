@@ -18,7 +18,7 @@ function NavDesktop() {
         <div className={styles.right}>
           <NavLinks />
         </div>
-        {!ishome && <Search />}
+        {false && <Search />}
         <div className={styles.left}>{login ? <User /> : <NavAuth />}</div>
       </Container>
     </nav>

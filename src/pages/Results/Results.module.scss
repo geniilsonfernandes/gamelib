@@ -1,0 +1,40 @@
+.bread {
+  color: var(--dark--500);
+  padding: 48px 0;
+  a {
+    color: inherit;
+    &:hover {
+      color: var(--primary);
+    }
+  }
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 32px;
+  padding: 24px 0;
+  @media screen and (max-width: 768px) {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 16px;
+  }
+}
+
+.skeleton {
+  display: block;
+  background-color: var(--dark--700);
+  width: 100%;
+  height: 300px;
+  animation: loop ease-in-out infinite 2s;
+}
+
+@keyframes loop {
+  0% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}

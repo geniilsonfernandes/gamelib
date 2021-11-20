@@ -1,18 +1,7 @@
-import React, { createContext, useState } from "react";
+import React, { createContext } from "react";
 export const UserContext = createContext();
+const key = "65fbd76f50e342e8bd866b7e28d30e75";
 
 export const SearchProvider = ({ children }) => {
-  const [loading, setLoading] = useState(false);
-
-  function SearchValue(value) {
-    setLoading(false);
-    // aqui faço a pesquisa com axios
-    return `aqui o resulado da pesquisa: ${value}  `;
-  }
-
-  return (
-    <UserContext.Provider value={{ SearchValue, loading }}>
-      {children}
-    </UserContext.Provider>
-  );
+  return <UserContext.Provider value={{}}>{children}</UserContext.Provider>;
 };

@@ -1,4 +1,4 @@
-# Game lib
+# Game lib | uso da Api de jogos [Rawg](https://rawg.io/)
 
 ![Preview-Screens](ui_01.png)
 
@@ -25,7 +25,7 @@ Este projeto é para meu portfólio pessoal, meu objetivo é sempre melhorar min
 ## Observações sobre esse projeto
 
 1 - A funcionalidade de log in/Sign in sao apenas visual
-2 - A funcionalidade de search e cateogrias não funcional.
+2 - A funcionalidade de search funcional com uso de api.
 
 ## UI
 
